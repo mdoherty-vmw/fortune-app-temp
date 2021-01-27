@@ -1,3 +1,0 @@
-# fortune-demo
-
-Updated.
