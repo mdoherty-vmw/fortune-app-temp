@@ -3,7 +3,7 @@
   kind: Deployment
   metadata:
     name: fortune-app
-    namespace: <replace>
+    namespace: mdoherty
   spec:
     replicas: 2
     selector:
@@ -25,14 +25,14 @@
           app: fortune-app
       spec:
         containers:
-        - image: harbor.pdmodernapps.com/library/fortune:1.0
-          name: fortune-app
+        - image: harbor.pdmodernapps.com/library/mdoherty-fortune:2cc79b1
+          name: 2cc79b1
           ports:
           - containerPort: 8080
             protocol: TCP
           env:
           - name: SPRING_REDIS_HOST
-            value: "redis.<replace>.svc.cluster.local"
+            value: "redis.mdoherty.svc.cluster.local"
           readinessProbe:
             httpGet:
               path: /all-fortunes.html
