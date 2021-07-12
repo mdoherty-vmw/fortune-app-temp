@@ -63,7 +63,7 @@ public class BackendController {
         _repository.findAll().forEach(fortune -> fortunes.add(fortune));
         // cpu load for 20 minutes
         // ********* THIS PART WAS ADDED BY HOWARD **********
-        //load(1, 20, 300000);
+        load(1, 20, 300000);
         // **************************************************
         LOG.info("Retrieved " + fortunes.size() + " fortunes");
         return Collections.unmodifiableList(fortunes);
