@@ -26,7 +26,7 @@
       spec:
         containers:
         - image: harbor.pdmodernapps.com/library/mdoherty-fortune:2cc79b1
-          name: 2cc79b1
+          name: fortune-app
           ports:
           - containerPort: 8080
             protocol: TCP
