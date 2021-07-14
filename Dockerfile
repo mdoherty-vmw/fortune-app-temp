@@ -1,5 +1,5 @@
 FROM bitnami/java:11-prod
-LABEL Owner="Ryan Clair"
+LABEL Owner="Mike Doherty"
 
 COPY target/fortune-0.0.1-SNAPSHOT.jar app.jar
 
